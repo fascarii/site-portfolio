@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Source+Sans+Pro&display=swap');
+
 /*Variáveis CSS*/
 
 :root {
@@ -17,11 +18,13 @@
     --transition: 0.3s;
 }
 
+
 /*Fim das Variáveis CSS*/
 
 html {
     scroll-behavior: smooth;
 }
+
 
 /*Reset CSS*/
 
@@ -48,6 +51,7 @@ body {
     font-family: var(--font-family);
 }
 
+
 /*position:sticky, mantém a barra de navegação fixa no topo
 z-index:1, mantém a barra acima dos demais elementos na página*/
 
@@ -64,16 +68,55 @@ nav {
     box-shadow: 0 3px 5px rgba(84, 74, 143, 0.1);
 }
 
-nav h1{
-    color:var(--primary-color);
+nav h1 {
+    color: var(--primary-color);
 }
 
-nav a{
-    color:var(--primary-color);
-    transition:var(--transition);
+nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
 }
 
-nav a:hover{
-    color:var(--secondary-color);
+nav a:hover {
+    color: var(--secondary-color);
     border-bottom: 1px solid var(--secondary-color);
+}
+
+.burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
+}
+
+.hero img {
+    height: 37.5rem;
+    width: 37.5rem;
+}
+
+.bio {
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 15px 2px var(--primary-shadow);
+}
+
+.bio h1 {
+    margin-bottom: var(--bottom-margin);
+}
+
+.bio p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
 }
