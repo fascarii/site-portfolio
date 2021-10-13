@@ -82,6 +82,15 @@ nav a:hover {
     border-bottom: 1px solid var(--secondary-color);
 }
 
+nav ul {
+    display: flex;
+    gap: 1.9rem;
+}
+
+nav ul li {
+    font-weight: var(--bold-font);
+}
+
 .burger-menu {
     color: var(--primary-color);
     font-size: 2rem;
