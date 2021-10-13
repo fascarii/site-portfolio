@@ -14,7 +14,7 @@
     --secondary-shadow: #a17a69;
     --bottom-margin: 0.5rem;
     --bottom-margin-2: 1rem;
-    --line-height: 1.7rem;
+    --line-height: 1.5rem;
     --transition: 0.3s;
 }
 
@@ -128,4 +128,18 @@ nav ul li {
 .bio p {
     line-height: var(--line-height);
     padding: 0.3rem 0;
+}
+.mais-sobre {
+	background-color:var(--bg-color);
+	padding: 1rem 6rem;
+}
+
+.mais-sobre h2{
+	margin-bottom: var(--bottom-margin);
+	text-align: center;
+}
+
+.mais-sobre p {
+	line-height: var(--line-height);
+	padding: 0.4rem;
 }
