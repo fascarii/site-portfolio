@@ -16,34 +16,29 @@
     --bottom-margin-2: 1rem;
     --line-height: 1.5rem;
     --transition: 0.3s;
+    --card-border-radius: 4px;
 }
-
 @media screen and (max-width: 420px) {
-  .hero img {
-    height: 37.5rem;
-    width: 23rem;
-  }
-
-  .bio {
-    width: 18.3rem;
-  }
-
-  .project-container {
-    width: 17.875rem;
-  }
-
-  .contact-form-container {
-    max-width: 17.75rem;
-  }
-} 
-
+    .hero img {
+        height: 37.5rem;
+        width: 23rem;
+    }
+    .bio {
+        width: 18.3rem;
+    }
+    .project-container {
+        width: 17.875rem;
+    }
+    .contact-form-container {
+        max-width: 17.75rem;
+    }
+}
 
 /*Fim das Variáveis CSS*/
 
 html {
     scroll-behavior: smooth;
 }
-
 
 /*Reset CSS*/
 
@@ -52,24 +47,19 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
-
 ul {
     list-style-type: none;
 }
-
 a {
     text-decoration: none;
     color: var(--primary-color);
 }
-
 a:hover {
     color: var(--secondary-color);
 }
-
 body {
     font-family: var(--font-family);
 }
-
 
 /*position:sticky, mantém a barra de navegação fixa no topo
 z-index:1, mantém a barra acima dos demais elementos na página*/
@@ -86,30 +76,24 @@ nav {
     background-color: var(--bg-color);
     box-shadow: 0 3px 5px rgba(84, 74, 143, 0.1);
 }
-
 nav h1 {
     color: var(--primary-color);
 }
-
 nav a {
     color: var(--primary-color);
     transition: var(--transition);
 }
-
 nav a:hover {
     color: var(--secondary-color);
     border-bottom: 1px solid var(--secondary-color);
 }
-
 nav ul {
     display: flex;
     gap: 1.9rem;
 }
-
 nav ul li {
     font-weight: var(--bold-font);
 }
-
 .burger-menu {
     color: var(--primary-color);
     font-size: 2rem;
@@ -118,7 +102,6 @@ nav ul li {
     cursor: pointer;
     display: none;
 }
-
 .hero {
     display: flex;
     align-items: center;
@@ -127,76 +110,87 @@ nav ul li {
     max-width: 68.75rem;
     margin: auto;
 }
-
 .hero img {
     height: 37.5rem;
     width: 37.5rem;
 }
-
 .bio {
     width: 25rem;
     padding: 0.625rem;
-    border-radius: 6px;
-    box-shadow: 0 2px 15px 2px var(--primary-shadow);
+    border-radius: var(--card-border-radius);
+    box-shadow: 0px 5px 6px var(--primary-shadow);
 }
-
 .bio h1 {
     margin-bottom: var(--bottom-margin);
 }
-
 .bio p {
     line-height: var(--line-height);
     padding: 0.3rem 0;
 }
 .mais-sobre {
-	background-color:var(--bg-color);
-	padding: 1rem 6rem;
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
 }
-
-.mais-sobre h2{
-	margin-bottom: var(--bottom-margin);
-	text-align: center;
+.mais-sobre h2 {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
 }
-
 .mais-sobre p {
-	line-height: var(--line-height);
-	padding: 0.4rem;
+    line-height: var(--line-height);
+    padding: 0.4rem;
 }
-
-.skills{
+.skills {
     max-width: 68.75rem;
     margin: auto;
     text-align: center;
     margin-top: 2.5rem;
 }
-
-.skill-header{
+.skill-header {
     margin-bottom: 1rem;
-     
 }
-
-.skills-wrapper img{
+.skills-wrapper img {
     padding: 1.25rem;
-
 }
-
-.icon{
+.icon {
     width: 11.875rem;
     height: 11.25rem;
 }
-.projects{
-	background-color:var(--bg-color);
-	padding: 32px 0;
-	margin-top: 2rem;
+.projects {
+    background-color: var(--bg-color);
+    padding: 32px 0;
+    margin-top: 2rem;
 }
-
-.project-pic{
-	width: 65%;
-	height: 60%;
+.project-pic {
+    width: 65%;
+    height: 60%;
 }
-
-.projects-container{
-	display:flex;
-	align-items:center;
-	justify-content: center;
+.projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.project-container {
+    text-align: center;
+    width: 21.875rem;
+    padding: 1rem;
+}
+.project-container p {
+    padding: 0.4rem;
+}
+.project-title {
+    margin-bottom: var(--bottom-margin);
+}
+.project-details {
+    margin-bottom: var(--bottom-margin);
+}
+.project-card {
+    background-color: #ffffff;
+    border-radius: var(--card-border-radius);
+    box-shadow: 0 2px 5px var(--primary-shadow);
+    padding: 20px;
+    margin: 10px;
 }
